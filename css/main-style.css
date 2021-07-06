@@ -1,9 +1,77 @@
-.card {
+:root {
   font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  max-width: 600px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
 }
 
 .card_name {
+  margin: 0 0 20px 0;
+
   font-family: 'Roboto Slab', serif;
+}
+
+.card_main-text {
+  margin: 0 0 20px 0;
+  text-align: justify;
+}
+
+.card_photo {
+  max-width: 400px;
+  max-height: 400px;
+
+  clip-path: circle(30% at 53% 30%);
+}
+
+.card_contacts {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.card_contacts .card_contact {
+  display: inline-block;
+}
+
+.card_contact--fb a,
+.card_contact--twitter a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+}
+
+.card_contact--fb a {
+  background-image: url('/img/facebook.png');
+}
+
+.card_contact--twitter a {
+  background-image: url('/img/twitter.png');
+}
+
+.caption-info {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .visually-hidden {
