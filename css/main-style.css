@@ -1,15 +1,12 @@
 :root {
   font-family: 'Nunito', sans-serif;
   box-sizing: border-box;
+
+  --transition_properties: ease-in-out 300ms;
 }
 
 a {
   text-decoration: none;
-}
-
-a:hover {
-  color: tomato;
-  font-weight: 600;
 }
 
 img {
@@ -47,12 +44,12 @@ img {
 
   clip-path: circle(30% at 53% 30%);
 
-  transition: transform ease-in-out 200ms;
+  transition: transform var(--transition_properties);
 }
 
 .card_photo:hover {
   transform: scale(1.03);
-  transition: transform ease-in-out 200ms;
+  transition: transform var(--transition_properties);
 }
 
 .card_contacts {
@@ -69,6 +66,18 @@ img {
   vertical-align: top;
 }
 
+.card_contact--email a {
+  color: #000;
+
+  transition: all var(--transition_properties);
+}
+
+.card_contact--email a:hover {
+  color: tomato;
+
+  transition: all var(--transition_properties);
+}
+
 .card_contact--fb a,
 .card_contact--twitter a {
   display: block;
@@ -77,14 +86,20 @@ img {
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 20px auto;
+
+  transition: background-image var(--transition_properties);
 }
 
 .card_contact--fb a {
   background-image: url('/img/facebook.png');
+
+  transition: background-image var(--transition_properties);
 }
 
 .card_contact--fb a:hover {
   background-image: url('/img/facebook_tomato.png');
+
+  transition: background-image var(--transition_properties);
 }
 
 .card_contact--twitter a {
@@ -98,10 +113,22 @@ img {
 .caption-info {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: auto;
   right: 0;
 
   font-size: 12px;
+}
+
+.caption-info__text a {
+  color: auto;
+
+  transition: all var(--transition_properties);
+}
+
+.caption-info__text a:hover {
+  color: tomato;
+
+  transition: all var(--transition_properties);
 }
 
 .visually-hidden {
