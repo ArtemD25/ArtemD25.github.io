@@ -21,7 +21,7 @@ img {
   padding: 10px 20px;
 
   display:flex;
-  align-items: felx-start;
+  align-items: flex-start;
 }
 
 @media (max-width:600px) {
