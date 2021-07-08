@@ -21,7 +21,17 @@ img {
   padding: 10px 20px;
 
   display:flex;
+  align-items: felx-start;
+}
 
+@media (max-width:600px) {
+  .card {
+    flex-wrap: wrap;
+  }
+}
+
+.text-wrapper {
+  flex-basis: 70%;
 }
 
 .card_name {
@@ -42,8 +52,9 @@ img {
   max-width: 400px;
   max-height: 400px;
 
-  clip-path: circle(30% at 53% 30%);
+  flex-basis: 30%;
 
+  clip-path: circle(30% at 53% 30%);
   transition: transform var(--transition_properties);
 }
 
