@@ -11,49 +11,225 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Slab&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+  <main class="content-wrapper">
 
-  <section class="card">
-    <div class="text-wrapper">
-      <h1 class="card_name">Artem Davydenko</h1>
-      <p class="card_main-text">Front-end developer, actually student. Although it doesn not seem to be front-end
-        developnment relevant information, I have a dog, a golden retriever named Busia. It seems the two things she
-        likes doing above all are swimming and running after birds.</p>
-      <ul class="card_contacts">
-        <li class="card_contact card_contact--email">
+    <header class="header">
+      <h1 class="header__name"><strong>Artem Davydenko</strong><br>visit card</h1>
+      <img class="header__photo" src="./img/photo2.min.jpeg" alt="Photo of Artem Davydenko" title="Photo of Artem Davydenko" width="1280" height="960">
+    </header>
+
+
+    <section class="card">
+      <h2 class="card__header header">Short info</h2>
+      <p class="card__text">Front-end developer, actually just a student. I started studying HTML / CSS / JS in 2019 and enrolled in late 2020 in the <a class="regular-link" href="https://programming.org.ua/ua" target="_blank" title="Link to the Sh++ programming school web site" aria-label="Link to the Sh++ programming school web site">Ш++</a> programming course. I finished its first part (computer science) in June 2021 and started studying Front-end.</p>
+      <p class="card__text">You can access my diploma by clicking on this icon: <a class="card__diploma-link" href="https://diploma.programming.org.ua/uk/d/WV5A8aGnNXgJE9doYMe6Lp3yOvMRlj04" aria-label="Link to my computer science diploma" target="_blank"><img src="./img/certificate.svg" alt="Computer Science Basics Alumnus Diploma"></a></p> 
+    </section>
+
+    <section class="skills">
+      <h2 class="header skills__header">Skills</h2>
+      <div class="skills__list-wrapper">
+        <ul class="skills__list">
+          <li class="skills__item skills__item--html">
+            <p class="skills__title">HTML</p>
+            <ul class="level">
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--half"></li>
+            </ul>
+          </li>
+          <li class="skills__item skills__item--css">
+            <p class="skills__title">CSS</p>
+            <ul class="level">
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--empty"></li>
+            </ul>
+          </li>
+          <li class="skills__item skills__item--js">
+            <p class="skills__title">JS</p>
+            <ul class="level">
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--half"></li>
+              <li class="level-dot dot--empty"></li>
+            </ul>
+          </li>
+          <li class="skills__item skills__item--sass">
+            <p class="skills__title">SASS</p>
+            <ul class="level">
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--empty"></li>
+              <li class="level-dot dot--empty"></li>
+            </ul>
+          </li>
+          <li class="skills__item skills__item--ts">
+            <p class="skills__title">TS</p>
+            <ul class="level">
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--empty"></li>
+              <li class="level-dot dot--empty"></li>
+              <li class="level-dot dot--empty"></li>
+            </ul>
+          </li>
+          <li class="skills__item skills__item--gulp">
+            <p class="skills__title">Gulp</p>
+            <ul class="level">
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--half"></li>
+              <li class="level-dot dot--empty"></li>
+              <li class="level-dot dot--empty"></li>
+            </ul>
+          </li>
+          <li class="skills__item skills__item--java">
+            <p class="skills__title">Java</p>
+            <ul class="level">
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--half"></li>
+              <li class="level-dot dot--empty"></li>
+              <li class="level-dot dot--empty"></li>
+            </ul>
+          </li>
+          <li class="skills__item skills__item--git">
+            <p class="skills__title">Git</p>
+            <ul class="level">
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--empty"></li>
+              <li class="level-dot dot--empty"></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2 class="projects__header header">Some tasks I accomplished by now</h2>
+      <div class="projects__items-wrapper">
+        <ul class="projects__items">
+          <li class="project__item">
+            <a href="https://artemd25.github.io/di-gi/" target="_blank">
+              <img class="projects__item-image" src="./img/bg-img-10.jpg" alt="Заставка сайта компании Di-Gi" width="360" height="167">
+            </a>
+            <span class="projects__title">Di-Gi web-site<br><em>(HTML/CSS/JS)</em></span>
+          </li>
+          <li class="project__item">
+            <a href="https://github.com/ArtemD25/DFS-silhouette-finder" target="_blank">
+              <img class="projects__item-image" src="./img/binary-code.svg" alt="Code image" width="360" height="167">
+            </a>
+            <span class="projects__title">Depth-first search of image silhouettes<br><em>(Java)</em></span>
+          </li>
+          <li class="project__item">
+            <a href="https://github.com/ArtemD25/BFS-silhouette-finder" target="_blank">
+              <img class="projects__item-image" src="./img/binary-code.svg" alt="Code image" width="360" height="167">
+            </a>
+            <span class="projects__title">Breadth-first search of image silhouettes<br><em>(Java)</em></span>
+          </li>
+          <li class="project__item">
+            <a href="https://artemd25.github.io/level_1-2/" target="_blank">
+              <img class="projects__item-image" src="./img/binary-code.svg" alt="Code image" width="360" height="167">
+            </a>
+            <span class="projects__title">Mastering skills working with JS<br><em>(HTML/CSS/JS)</em></span>
+          </li>
+          <li class="project__item">
+            <a href="https://artemd25.github.io/level_1-3/" target="_blank">
+              <img class="projects__item-image" src="./img/binary-code.svg" alt="Code image" width="360" height="167">
+            </a>
+            <span class="projects__title">Making and rendering tables based on data from an object<br><em>(HTML/CSS/JS)</em></span>
+          </li>
+          <li class="project__item">
+            <a href="https://artemd25.github.io/level_1-4/" target="_blank">
+              <img class="projects__item-image" src="./img/binary-code.svg" alt="Code image" width="360" height="167">
+            </a>
+            <span class="projects__title">Working with server - HTTP (GET, POST, DELETE)<br><em>(HTML/CSS/JS)</em></span>
+          </li>
+          <li class="project__item">
+            <a href="https://github.com/ArtemD25/Huffman_archiver" target="_blank">
+              <img class="projects__item-image" src="./img/binary-code.svg" alt="Code image" width="360" height="167">
+            </a>
+            <span class="projects__title">Huffman-algorithm archiver<br><em>(Java)</em></span>
+          </li>
+          <li class="project__item">
+            <a href="https://github.com/ArtemD25/java_collections_p1" target="_blank">
+              <img class="projects__item-image" src="./img/binary-code.svg" alt="Code image" width="360" height="167">
+            </a>
+            <span class="projects__title">Java collections (ArrayList, LinkedList, Stack and Queue)<br><em>(Java)</em></span>
+          </li>
+          <li class="project__item">
+            <a href="https://github.com/ArtemD25/java_collections_p2" target="_blank">
+              <img class="projects__item-image" src="./img/binary-code.svg" alt="Code image" width="360" height="167">
+            </a>
+            <span class="projects__title">Java collection (Priority Queue) & HashMap<br><em>(Java)</em></span>
+          </li>
+          <li class="project__item">
+            <a href="https://github.com/ArtemD25/formula_calculator" target="_blank">
+              <img class="projects__item-image" src="./img/binary-code.svg" alt="Code image" width="360" height="167">
+            </a>
+            <span class="projects__title">Formula calculator<br><em>(Java)</em></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="languages">
+      <h2 class="header languages__header">Language skills</h2>
+      <div class="">
+        <ul class="languages__list">
+          <li class="languages__item languages__item--en">
+            <p class="languages__title">English</p>
+            <ul class="level">
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--empty"></li>
+            </ul>
+          </li>
+          <li class="languages__item languages__item--de">
+            <p class="languages__title">German</p>
+            <ul class="level">
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--full"></li>
+              <li class="level-dot dot--half"></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="miscellaneous">
+      <h2 class="miscellaneous__header header">Miscellaneous</h2>
+      <p class="miscellaneous__text">Although it does not seem to be front-end developnment relevant information, I have a dog, a golden retriever named Busia. It seems the two things she likes doing above all are swimming and running after birds.</p>
+      <p class="miscellaneous__photo-wrapper"><img src="./img/photo.min.jpg" alt="Golden Retriever photo" aria-label="A photo of the cutiest golden retriever ever"></p>
+    </section>
+  
+    <section class="contacts">
+      <h2 class="contacts__header header">Contacts</h2>
+      <ul class="contacts__items">
+        <li class="contacts__item contacts__item--email">
           <a href="mailto:artemdavydenko25@gmail.com" title="My email">artemdavydenko25@gmail.com</a>
         </li>
-        <li class="card_contact card_contact--fb">
+        <li class="contacts__item contacts__item--fb">
           <a href="https://www.facebook.com/artemdavidenko" target="_blank" title="Link to facebook page">
             <span class="visually-hidden">Link to my facebook page</span>
           </a>
         </li>
-        <li class="card_contact card_contact--twitter">
+        <li class="contacts__item contacts__item--twitter">
           <a href="https://twitter.com/ArtemDavydenko1" target="_blank" title="Link to twitter page">
             <span class="visually-hidden">Link to my twitter page</span>
           </a>
         </li>
       </ul>
-    </div>
-    <img class="card_photo" src="./img/photo2.min.jpeg" alt="Photo of Artem Davydenko" title="Photo of Artem Davydenko" width="1280" height="960">
-  </section>
-
-  <section class="projects">
-    <h2 class="projects__header">My projects</h2>
-    <ul class="projects__items">
-      <li class="project__item">
-        <a href="https://artemd25.github.io/di-gi/">
-          <img class="projects__item-image" src="img/bg-img-10.jpg" alt="Заставка сайта компании Di-Gi" width="1440" height="668">
-        </a>
-        <span class="projects__title">Сайт компании Di-Gi</span>
-      </li>
-    </ul>
-  </section>
+    </section>
+  </main>
 
   <footer class="caption-info">
-    <div class="caption-info__text">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>
-      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <p class="caption-info__text">Icons made by <a class="regular-link" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a>, <a class="regular-link" href="https://www.freepik.com" title="Freepik">Freepik</a> and <a class="regular-link" href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> from <a class="regular-link" href="https://www.flaticon.com/" title="Flaticon">flaticon</a> and <a class="regular-link" href="https://uk.m.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Gulp.js_Logo.svg">Wikipedia</a></p>
   </footer>
 </body>
 
