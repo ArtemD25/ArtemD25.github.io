@@ -87,6 +87,8 @@ section:not(:last-child) {
 }
 
 .header__name {
+  position: relative;
+
   margin: 0 0 60px 0;
   padding: 0;
 
@@ -98,6 +100,26 @@ section:not(:last-child) {
 .header__name strong {
   font-size: 40px;
   color: #000000;
+}
+
+.header__name::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: -70px;
+  width: 50px;
+  height: 60px;
+
+  background-image: url('../img/business-cards.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .header__name::before {
+    display: none;
+  }
 }
 
 .header__photo {
@@ -393,6 +415,7 @@ section:not(:last-child) {
   flex-direction: row;
   justify-content: start;
   align-items: flex-start;
+  flex-wrap: wrap;
 
   list-style: none;
 }
@@ -404,7 +427,7 @@ section:not(:last-child) {
 }
 
 .languages__item {
-  margin: 0 0 0 20px;
+  margin: 0 0 10px 20px;
   padding: 75px 20px 15px 20px;
   min-width: 80px;
   min-height: 20px;
