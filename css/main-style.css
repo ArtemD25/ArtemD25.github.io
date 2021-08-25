@@ -111,23 +111,23 @@ body {
 }
 
 .card_contact--fb a {
-  background-image: url('/img/facebook.png');
+  background-image: url('./img/facebook.png');
 
   transition: background-image var(--transition_properties);
 }
 
 .card_contact--fb a:hover {
-  background-image: url('/img/facebook_tomato.png');
+  background-image: url('./img/facebook_tomato.png');
 
   transition: background-image var(--transition_properties);
 }
 
 .card_contact--twitter a {
-  background-image: url('/img/twitter.png');
+  background-image: url('./img/twitter.png');
 }
 
 .card_contact--twitter a:hover {
-  background-image: url('/img/twitter_tomato.png');
+  background-image: url('./img/twitter_tomato.png');
 }
 
 .caption-info {
