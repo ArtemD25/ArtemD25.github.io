@@ -204,6 +204,10 @@ section:not(:last-child) {
   background-image: url('../img/git.svg');
 }
 
+.skills__item--ps {
+  background-image: url('../img/photoshop.svg');
+}
+
 .skills__item {
   margin: 0 0 15px 20px;
   padding: 75px 20px 15px 20px;
