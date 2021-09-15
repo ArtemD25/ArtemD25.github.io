@@ -214,8 +214,8 @@ section:not(:last-child) {
 
 .skills__item {
   margin: 0 0 15px 20px;
-  padding: 75px 20px 15px 20px;
-  min-width: 80px;
+  padding: 75px 15px 15px 15px;
+  width: 80px;
   min-height: 20px;
 
   background-repeat: no-repeat;
