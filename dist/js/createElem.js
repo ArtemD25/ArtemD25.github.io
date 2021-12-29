@@ -1,0 +1,1 @@
+export default function createElem(t,e,n,r,l){const c=document.createElement(t);if(e&&(c.id=e),r&&(c.textContent=r),l){var o=Object.keys(l);for(let t=0;t<o.length;t++)c.setAttribute(o[t],l[o[t]])}if(n)for(let t=0;t<n.length;t++)c.classList.add(n[t]);return c}
